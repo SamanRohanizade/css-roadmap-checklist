@@ -1,9 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import headerImage from 'src/images/checklist.svg'
 import Header from "./header"
-import "./layout.css"
+import "./layout.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,7 +18,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header
+        title={data.site.siteMetadata.title}
+        headerImage={headerImage}
+        subtitle="Complete each step of this checklist for CSS Mastery" />
       <div
         style={{
           margin: `0 auto`,

@@ -1,12 +1,26 @@
 .header {
-  background: linear-gradient(#52a2f2, transparent),
-              linear-gradient(-45deg, #7a4df5, transparent),
-              linear-gradient(45deg, #5191f4, transparent);
-  background-blend-mode: screen;
-  padding: 3em 2em;
-  color: white;
+  text-align: center;
+  padding-top: 3em;
+  &-img {
+    display: inline-block;
+    background: #ccebe3;
+    border-radius: 50%;
+    width: 7em;
+    height: 7em;
 
-  h1 {
-    margin: 0;
+    img {
+      position: relative;
+      top: 18%;
+      width: 90%;
+    }
+  }
+
+  &-title {
+    margin-top: 1.5em;
+    font-size: 1.7rem;
+  }
+  &-subtitle {
+    font-size: 1.2rem;
+    color: #8a8a8a;
   }
 }
