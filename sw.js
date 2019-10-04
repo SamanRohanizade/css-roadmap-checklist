@@ -27,27 +27,27 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-0bd1f9d016ba6df51a6b.js"
+    "url": "webpack-runtime-54f55dafa9488bed4bf4.js"
   },
   {
-    "url": "commons.a5883231726389dfed9a.css"
+    "url": "commons.f0bb69001e07813b6fe6.css"
   },
   {
     "url": "commons-72fccb8ecc69a895c292.js"
   },
   {
-    "url": "app-a34f14ad1d43a2648cdc.js"
+    "url": "app-8c5bec6eeebc1ea6a481.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-32fab29da47e7beeda2e.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "c2371bb5450e5abe79e9994b0b9549e0"
+    "revision": "0624574a34d6e45a97753810cfa0b3ee"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "a5902ba9bcab64d402a42f5ef94564f8"
+    "revision": "aac8c894717dfbf565a6ea9e9177c35c"
   },
   {
     "url": "manifest.webmanifest",
@@ -74,12 +74,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   }
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^`), ``)
+  pathname = pathname.replace(new RegExp(`^/css-roadmap-checklist`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-a34f14ad1d43a2648cdc.js`))) {
+  if (!resources || !(await caches.match(`/css-roadmap-checklist/app-8c5bec6eeebc1ea6a481.js`))) {
     return await fetch(event.request)
   }
 
@@ -92,7 +92,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/css-roadmap-checklist/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
