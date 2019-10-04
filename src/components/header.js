@@ -1,16 +1,16 @@
 import React from "react"
-import style from "./header.module.scss"
+import styles from "./header.module.scss"
 
 const Header = ({ title, subtitle, headerImage }) => (
-  <header className={style.header}>
-    <div className={style.headerImg}>
+  <header className={styles.header}>
+    <div className={styles.headerImg}>
       {headerImage ?
         <img src={headerImage} alt={title} />
         : null
       }
     </div>
-    <h1 className={style.headerTitle}>{title}</h1>
-    <h2 className={style.headerSubtitle}>{subtitle}</h2>
+    <h1 className={styles.headerTitle}>{title}</h1>
+    <h2 className={styles.headerSubtitle}>{subtitle}</h2>
   </header>
 )
 
