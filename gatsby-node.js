@@ -65,7 +65,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       description: `read about different CSS Methodologies like BEM, ABEM, ITCSS, SUITCSS, OOCSS, ... and apply the one you like best`
     },
     {
-      title: 'Expand your knowledge/experience and get more in touch with the community',
+      title: 'Expand your knowledge & experience and get more in touch with the community',
       description: `Expand your knowledge, follow CSS-related blogs like css-tricks.com or smashing magazine. get in touch with the community, try to find other CSS experts, get familiar with interesting tools & concepts in the community like CSS-in-JS, ...`
     }
   ];
