@@ -8,6 +8,7 @@
        url('../fonts/fira-sans-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 body {
+  font-family: 'Fira Sans';
   background: #f9f9f9;
 }
 
@@ -15,4 +16,8 @@ body {
   h#{$i} {
     font-family: 'Fira Sans';
   }
+}
+
+main {
+  padding: 1rem;
 }
