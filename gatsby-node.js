@@ -54,7 +54,7 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       title: 'Go deep! learn about the why!',
       description: `Search for a deeper understanding of CSS.
                     what is a BFC? what is a Stacking context? why do margins collapse and when do they not?! why animating width/height is a bad idea?
-                    but keep in mind that this is a continuous step. start going deeper. but don't get stuck in this step!`
+                    but keep in mind that this is a continuous process. start going deeper. but don't get stuck in this step!`
     },
     {
       title: 'Take a look at a CSS Framework',
